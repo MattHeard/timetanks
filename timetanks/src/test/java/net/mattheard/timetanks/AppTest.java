@@ -25,19 +25,19 @@ public class AppTest extends TestCase {
     }
 
     public void testCommanderNameAlice() {
-		final String name = "Alice";
-		final Commander commander = new Commander(name);
-		assertEquals(name, commander.getName());
+        final String name = "Alice";
+        final Commander commander = new Commander(name);
+        assertEquals(name, commander.getName());
     }
 
     public void testCommanderNameBob() {
-		final String name = "Bob";
-		final Commander commander = new Commander(name);
-		assertEquals(name, commander.getName());
+        final String name = "Bob";
+        final Commander commander = new Commander(name);
+        assertEquals(name, commander.getName());
     }
 
     public void testEmptyInventorySize() {
-		final Inventory inventory = new Inventory();
-		assertEquals(0, inventory.size());
+        final Inventory inventory = new Inventory();
+        assertEquals(0, inventory.size());
     }
 }
