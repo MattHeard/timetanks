@@ -1,5 +1,6 @@
 package net.mattheard.timetanks;
 
+import java.util.List;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -51,5 +52,11 @@ public class AppTest extends TestCase {
         final String name = "Spectre";
         final Tank tank = new Tank(name);
         assertEquals(name, tank.getName());
+    }
+
+    public void testNewCommanderTankNames() {
+        Commander commander = new Commander("Alice");
+        List<String> tankNames = commander.getTankNames();
+        assertEquals(0, tankNames.size());
     }
 }
