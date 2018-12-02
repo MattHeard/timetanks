@@ -40,4 +40,16 @@ public class AppTest extends TestCase {
         final Inventory inventory = new Inventory();
         assertEquals(0, inventory.size());
     }
+
+    public void testTankNameHeartseeker() {
+        final String name = "Heartseeker";
+        final Tank tank = new Tank(name);
+        assertEquals(name, tank.getName());
+    }
+
+    public void testTankNameSpectre() {
+        final String name = "Spectre";
+        final Tank tank = new Tank(name);
+        assertEquals(name, tank.getName());
+    }
 }
